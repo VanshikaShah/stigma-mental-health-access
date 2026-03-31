@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stigma as the Hidden Barrier to Mental Health Care</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <h1>Stigma as the Hidden Barrier to Mental Health Care</h1>
+    <p class="subtitle">
+      Healthy Minds Study • Anxiety/Depression severity, care utilization, and barriers to access
+    </p>
+
+    <nav class="toc">
+      <a href="#issue">Presenting the Issue</a>
+      <a href="#need">Need vs Utilization</a>
+      <a href="#gap">The Access Gap</a>
+      <a href="#stigma">Why Stigma</a>
+      <a href="#actions">What Can We Do</a>
+      <a href="#data">Data & Methods</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section id="issue">
+    <h2>Presenting the Issue</h2>
+    <p class="lead">
+      We start by describing how common anxiety and depression symptoms are in college students,
+      and how symptom severity is distributed.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Prevalence of Anxiety & Depression</h3>
+        <p class="caption">Waffle chart: anxiety, depression, both, none.</p>
+        <div class="viz">
+          <!-- PASTE TABLEAU EMBED CODE HERE (Prevalence waffle) -->
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Severity Distribution</h3>
+        <p class="caption">Severity categories (consider bar/stacked bar over pie for readability).</p>
+        <div class="viz">
+          <!-- PASTE TABLEAU EMBED CODE HERE (Severity distribution) -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="need">
+    <h2>Many Students Need Support</h2>
+    <p>
+      We compare perceived need for help with actual service utilization.
+      Interactivity allows exploring anxiety vs depression vs both.
+    </p>
+    <div class="card">
+      <h3>Perceived Need → Utilization</h3>
+      <p class="caption">Click/filters: condition group; shows past-year treatment / no treatment.</p>
+      <div class="viz">
+        <!-- PASTE TABLEAU EMBED CODE HERE (Need + utilization interactive) -->
+      </div>
+      <div class="takeaway">
+        <strong>Key takeaway:</strong> High need does not reliably translate into receiving care.
+      </div>
+    </div>
+  </section>
+
+  <section id="gap">
+    <h2>The Access Gap in High-Need Students</h2>
+    <p>
+      We focus on students with moderate-to-severe symptoms and quantify unmet need
+      (high symptoms + no past-year treatment).
+    </p>
+
+    <div class="card">
+      <h3>Unmet Need (High Symptoms, No Care)</h3>
+      <p class="caption">Option: funnel / sankey / filtered prevalence-with-utilization overlay.</p>
+      <div class="viz">
+        <!-- PASTE TABLEAU EMBED CODE HERE (Unmet need / gap visualization) -->
+      </div>
+    </div>
+  </section>
+
+  <section id="stigma">
+    <h2>Why We Focus on Stigma</h2>
+    <p>
+      Barriers to care are not uniform. We categorize barriers into stigma-related vs structural,
+      and compare patterns for NS, HS, or both.
+    </p>
+
+    <div class="card">
+      <h3>Barriers to Care (NS vs HS vs Both)</h3>
+      <p class="caption">Bar chart with filters: NS / HS / Both. Color by barrier category (stigma highlighted).</p>
+      <div class="viz">
+        <!-- PASTE TABLEAU EMBED CODE HERE (Barriers categorized) -->
+      </div>
+      <div class="takeaway">
+        <strong>Key takeaway:</strong> Stigma-related barriers remain highly reported, including among high-symptom groups.
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>How Prominent Is Stigma?</h3>
+        <p class="caption">“X of top 10 barriers are stigma-related” (your combined NS+HS formula).</p>
+        <div class="viz">
+          <!-- PASTE TABLEAU EMBED CODE HERE (Top-10 stigma count) -->
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Who Is Most Affected?</h3>
+        <p class="caption">Only include demographics if stigma differs meaningfully (avoid adding noise).</p>
+        <div class="viz">
+          <!-- PASTE TABLEAU EMBED CODE HERE (Stigma by subgroup, if strong) -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="actions">
+    <h2>What Can We Do About It?</h2>
+    <p>
+      We show actionable levers at two levels: student behaviors correlated with outcomes,
+      and institutional context associated with higher stigma or lower utilization.
+    </p>
+
+    <div class="card">
+      <h3>Student-Level Factors</h3>
+      <p class="caption">
+        Correlation matrix + interactive sliders (sleep/exercise/substance). Filters: anxiety / depression / both.
+      </p>
+      <div class="viz">
+        <!-- PASTE TABLEAU EMBED CODE HERE (Student factors interactive) -->
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Institution-Level Factors</h3>
+      <p class="caption">
+        Variable picker (e.g., competitiveness) + narrative about isolative strategies and leadership responses.
+      </p>
+      <div class="viz">
+        <!-- PASTE TABLEAU EMBED CODE HERE (Institution factors) -->
+      </div>
+    </div>
+  </section>
+
+  <section id="data">
+    <h2>Data & Methods</h2>
+    <ul>
+      <li><strong>Data:</strong> Healthy Minds Study (web-based survey of college student mental health and help-seeking)</li>
+      <li><strong>Measures:</strong> PHQ-9, GAD-7 severity categories; perceived need; past-year treatment; barrier selections</li>
+      <li><strong>Derived metrics:</strong> “Unmet need” = moderate-to-severe symptoms + no treatment</li>
+      <li><strong>Notes:</strong> Cross-sectional, self-reported; possible selection and response bias</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p><strong>Team:</strong> Vanshika | Aleena | Smera | Tim</p>
+    <p>Data Visualization Principles | Final deliverable</p>
+  </div>
+</footer>
+
+</body>
+</html>
