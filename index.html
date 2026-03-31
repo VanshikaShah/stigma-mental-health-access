@@ -6,171 +6,287 @@
   <title>Stigma as the Hidden Barrier to Mental Health Care</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- Sticky top nav -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="brand-title">Stigma & Mental Health Access</span>
+      </div>
 
-<header class="hero">
-  <div class="container">
-    <h1>Stigma as the Hidden Barrier to Mental Health Care</h1>
-    <p class="subtitle">
-      Healthy Minds Study | Anxiety/Depression severity, care utilization, and barriers to access
-    </p>
+      <nav class="top-links" aria-label="Section navigation">
+        <a href="#issue">Issue</a>
+        <a href="#need">Need</a>
+        <a href="#gap">Gap</a>
+        <a href="#stigma">Stigma</a>
+        <a href="#actions">Actions</a>
+        <a href="#data">Data</a>
+      </nav>
+    </div>
+  </header>
 
-    <nav class="toc">
-      <a href="#issue">Presenting the Issue</a>
-      <a href="#need">Need vs Utilization</a>
-      <a href="#gap">The Access Gap</a>
-      <a href="#stigma">Why Stigma</a>
-      <a href="#actions">What Can We Do</a>
-      <a href="#data">Data & Methods</a>
-    </nav>
-  </div>
-</header>
+  <!-- Hero (neutral band) -->
+  <section class="band band-neutral" id="top">
+    <div class="container hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1>Stigma is the hidden barrier to mental health care.</h1>
+          <p class="subtitle">
+            Using the Healthy Minds Study, we examine symptom prevalence, unmet need, and the
+            barriers—especially stigma—that prevent students from accessing care.
+          </p>
 
-<main class="container">
+          <div class="chips" aria-label="Quick links">
+            <a class="chip" href="#issue">Start: symptoms</a>
+            <a class="chip" href="#need">Need vs care</a>
+            <a class="chip" href="#gap">Unmet need</a>
+            <a class="chip stigma" href="#stigma">Stigma barriers</a>
+            <a class="chip" href="#actions">What helps</a>
+          </div>
 
-  <section id="issue">
-    <h2>Presenting the Issue</h2>
-    <p class="lead">
-      We start by describing how common anxiety and depression symptoms are in college students,
-      and how symptom severity is distributed.
-    </p>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Prevalence of Anxiety & Depression</h3>
-        <p class="caption">Waffle chart: anxiety, depression, both, none.</p>
-        <div class="viz">
-          <!-- PASTE TABLEAU EMBED CODE HERE (Prevalence waffle) -->
+          <p class="meta">
+            Team: Vanshika • Aleena • Smera • Tim
+          </p>
         </div>
-      </div>
 
-      <div class="card">
-        <h3>Severity Distribution</h3>
-        <p class="caption">Severity categories (consider bar/stacked bar over pie for readability).</p>
-        <div class="viz">
-          <!-- PASTE TABLEAU EMBED CODE HERE (Severity distribution) -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="need">
-    <h2>Many Students Need Support</h2>
-    <p>
-      We compare perceived need for help with actual service utilization.
-      Interactivity allows exploring anxiety vs depression vs both.
-    </p>
-    <div class="card">
-      <h3>Perceived Need → Utilization</h3>
-      <p class="caption">Click/filters: condition group; shows past-year treatment / no treatment.</p>
-      <div class="viz">
-        <!-- PASTE TABLEAU EMBED CODE HERE (Need + utilization interactive) -->
-      </div>
-      <div class="takeaway">
-        <strong>Key takeaway:</strong> High need does not reliably translate into receiving care.
-      </div>
-    </div>
-  </section>
-
-  <section id="gap">
-    <h2>The Access Gap in High-Need Students</h2>
-    <p>
-      We focus on students with moderate-to-severe symptoms and quantify unmet need
-      (high symptoms + no past-year treatment).
-    </p>
-
-    <div class="card">
-      <h3>Unmet Need (High Symptoms, No Care)</h3>
-      <p class="caption">Option: funnel / sankey / filtered prevalence-with-utilization overlay.</p>
-      <div class="viz">
-        <!-- PASTE TABLEAU EMBED CODE HERE (Unmet need / gap visualization) -->
-      </div>
-    </div>
-  </section>
-
-  <section id="stigma">
-    <h2>Why We Focus on Stigma</h2>
-    <p>
-      Barriers to care are not uniform. We categorize barriers into stigma-related vs structural,
-      and compare patterns for NS, HS, or both.
-    </p>
-
-    <div class="card">
-      <h3>Barriers to Care (NS vs HS vs Both)</h3>
-      <p class="caption">Bar chart with filters: NS / HS / Both. Color by barrier category (stigma highlighted).</p>
-      <div class="viz">
-        <!-- PASTE TABLEAU EMBED CODE HERE (Barriers categorized) -->
-      </div>
-      <div class="takeaway">
-        <strong>Key takeaway:</strong> Stigma-related barriers remain highly reported, including among high-symptom groups.
-      </div>
-    </div>
-
-    <div class="grid">
-      <div class="card">
-        <h3>How Prominent Is Stigma?</h3>
-        <p class="caption">“X of top 10 barriers are stigma-related” (your combined NS+HS formula).</p>
-        <div class="viz">
-          <!-- PASTE TABLEAU EMBED CODE HERE (Top-10 stigma count) -->
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Who Is Most Affected?</h3>
-        <p class="caption">Only include demographics if stigma differs meaningfully (avoid adding noise).</p>
-        <div class="viz">
-          <!-- PASTE TABLEAU EMBED CODE HERE (Stigma by subgroup, if strong) -->
+        <div class="hero-side" aria-hidden="true">
+          <div class="hero-card">
+            <div class="blob blob-teal"></div>
+            <div class="blob blob-purple"></div>
+            <div class="hero-card-title">What you’ll see</div>
+            <ul class="hero-list">
+              <li>How common anxiety & depression symptoms are</li>
+              <li>Where treatment utilization falls short</li>
+              <li>Which barriers dominate—and where stigma stands out</li>
+              <li>Student + institution levers tied to stigma and outcomes</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="actions">
-    <h2>What Can We Do About It?</h2>
-    <p>
-      We show actionable levers at two levels: student behaviors correlated with outcomes,
-      and institutional context associated with higher stigma or lower utilization.
-    </p>
-
-    <div class="card">
-      <h3>Student-Level Factors</h3>
-      <p class="caption">
-        Correlation matrix + interactive sliders (sleep/exercise/substance). Filters: anxiety / depression / both.
+  <!-- 01 Issue (neutral band) -->
+  <section id="issue" class="band band-neutral">
+    <div class="container">
+      <div class="kicker">01 • Presenting the issue</div>
+      <h2>How prevalent are anxiety and depression symptoms?</h2>
+      <p class="lead">
+        We start with prevalence and severity. These set the baseline for understanding how many
+        students might benefit from support.
       </p>
-      <div class="viz">
-        <!-- PASTE TABLEAU EMBED CODE HERE (Student factors interactive) -->
+
+      <div class="grid-2">
+        <article class="card">
+          <div class="card-head">
+            <h3>Prevalence (Anxiety / Depression / Both / None)</h3>
+            <p class="caption">Waffle or icon-based chart.</p>
+          </div>
+          <div class="viz">
+            <!-- PASTE TABLEAU EMBED: Prevalence waffle -->
+          </div>
+          <div class="takeaway">
+            <span class="takeaway-title">Key takeaway</span>
+            Symptoms are common, and overlap is meaningful.
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Severity distribution</h3>
+            <p class="caption">Stacked bars often read better than pie.</p>
+          </div>
+          <div class="viz">
+            <!-- PASTE TABLEAU EMBED: Severity distribution -->
+          </div>
+          <div class="takeaway">
+            <span class="takeaway-title">Key takeaway</span>
+            A non-trivial subset fall into moderate-to-severe categories.
+          </div>
+        </article>
       </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Institution-Level Factors</h3>
-      <p class="caption">
-        Variable picker (e.g., competitiveness) + narrative about isolative strategies and leadership responses.
+  <!-- 02 Need (teal band) -->
+  <section id="need" class="band band-teal">
+    <div class="container">
+      <div class="kicker">02 • Need vs utilization</div>
+      <h2>Many students need support—but not all receive care</h2>
+      <p class="lead">
+        We compare perceived need for help with service utilization, with filters for anxiety,
+        depression, or both.
       </p>
-      <div class="viz">
-        <div class='tableauPlaceholder' id='viz1774917507158' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CS&#47;CS6730ProjectEDACleaned&#47;AcademicPressureandTreatmentGapbyInstitution&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CS6730ProjectEDACleaned&#47;AcademicPressureandTreatmentGapbyInstitution' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CS&#47;CS6730ProjectEDACleaned&#47;AcademicPressureandTreatmentGapbyInstitution&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1774917507158');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Perceived need → utilization</h3>
+          <p class="caption">Interactive: click/filters to view care vs no-care.</p>
+        </div>
+        <div class="viz">
+          <!-- PASTE TABLEAU EMBED: Need + utilization -->
+        </div>
+        <div class="takeaway teal">
+          <span class="takeaway-title">Key takeaway</span>
+          High need does not reliably translate into treatment.
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 03 Gap (neutral band) -->
+  <section id="gap" class="band band-neutral">
+    <div class="container">
+      <div class="kicker">03 • The access gap</div>
+      <h2>Among high-symptom students, who is not receiving care?</h2>
+      <p class="lead">
+        We focus on moderate-to-severe symptoms and quantify unmet need (high symptoms + no care).
+      </p>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Unmet need</h3>
+          <p class="caption">Funnel / sankey / filtered prevalence overlay.</p>
+        </div>
+        <div class="viz">
+          <!-- PASTE TABLEAU EMBED: Unmet need / access gap -->
+        </div>
+        <div class="takeaway">
+          <span class="takeaway-title">Key takeaway</span>
+          Students with the greatest need can still face the largest barriers.
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 04 Stigma (purple band) -->
+  <section id="stigma" class="band band-purple">
+    <div class="container">
+      <div class="kicker">04 • Why stigma</div>
+      <h2>Stigma-related barriers remain prominent</h2>
+      <p class="lead">
+        Barriers aren’t only structural (cost/time). Stigma-related barriers—privacy, self-reliance,
+        fear of judgment—can be highly reported and vary by symptom group.
+      </p>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Barriers to care (NS vs HS vs both)</h3>
+          <p class="caption">Filter NS / HS / Both; color stigma vs structural.</p>
+        </div>
+        <div class="viz">
+          <!-- PASTE TABLEAU EMBED: Barriers categorized -->
+        </div>
+        <div class="takeaway purple">
+          <span class="takeaway-title">Key takeaway</span>
+          Stigma-related barriers remain high—even when symptom severity is high.
+        </div>
+      </article>
+
+      <div class="grid-2">
+        <article class="card">
+          <div class="card-head">
+            <h3>How prominent is stigma?</h3>
+            <p class="caption">“X of top 10 barriers are stigma-related.”</p>
+          </div>
+          <div class="viz">
+            <!-- PASTE TABLEAU EMBED: Top-10 stigma count -->
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Who is affected most?</h3>
+            <p class="caption">Include subgroup differences only if meaningful.</p>
+          </div>
+          <div class="viz">
+            <!-- PASTE TABLEAU EMBED: Stigma by demographics (optional) -->
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <section id="data">
-    <h2>Data & Methods</h2>
-    <ul>
-      <li><strong>Data:</strong> Healthy Minds Study (web-based survey of college student mental health and help-seeking)</li>
-      <li><strong>Measures:</strong> PHQ-9, GAD-7 severity categories; perceived need; past-year treatment; barrier selections</li>
-      <li><strong>Derived metrics:</strong> “Unmet need” = moderate-to-severe symptoms + no treatment</li>
-      <li><strong>Notes:</strong> Cross-sectional, self-reported; possible selection and response bias</li>
-    </ul>
+  <!-- 05 Actions (teal band) -->
+  <section id="actions" class="band band-teal">
+    <div class="container">
+      <div class="kicker">05 • What can we do about it?</div>
+      <h2>Actionable levers at the student and institution level</h2>
+      <p class="lead">
+        We visualize correlates tied to outcomes (sleep/exercise/substance) and institution-level
+        context (e.g., competitiveness) to motivate interventions.
+      </p>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Student-level factors</h3>
+          <p class="caption">Correlation matrix + interactive controls; filter by condition group.</p>
+        </div>
+        <div class="viz">
+          <!-- PASTE TABLEAU EMBED: Student factors -->
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Institution-level factors</h3>
+          <p class="caption">Variable picker (e.g., competitiveness) + narrative context.</p>
+        </div>
+        <div class="viz">
+          <!-- PASTE TABLEAU EMBED: Institution factors -->
+        </div>
+      </article>
+    </div>
   </section>
 
-</main>
+  <!-- 06 Data (neutral band) -->
+  <section id="data" class="band band-neutral">
+    <div class="container">
+      <div class="kicker">06 • Data & methods</div>
+      <h2>Data source and key characteristics</h2>
+      <p class="lead">
+        Data comes from the Healthy Minds Study (HMS), a web-based survey of college student mental
+        health and help-seeking.
+      </p>
 
-<footer class="footer">
-  <div class="container">
-    <p><strong>Team:</strong> Vanshika | Aleena | Smera | Tim</p>
-    <p>Data Visualization Principles | Final deliverable</p>
-  </div>
-</footer>
+      <div class="grid-2">
+        <article class="card small">
+          <h3>Measures</h3>
+          <ul class="list">
+            <li>GAD-7 anxiety score + severity categories</li>
+            <li>PHQ-9 depression score + severity categories</li>
+            <li>Perceived need for care</li>
+            <li>Past-year treatment utilization</li>
+            <li>Barriers to care (multi-select)</li>
+          </ul>
+        </article>
 
+        <article class="card small">
+          <h3>Limitations</h3>
+          <ul class="list">
+            <li>Cross-sectional and self-reported survey responses</li>
+            <li>Potential selection bias (who responds / which schools participate)</li>
+            <li>Potential response bias (reporting of symptoms and barriers)</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="bottom-links">
+        <a class="chip" href="#top">Back to top</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-title">Stigma & Mental Health Access</div>
+        <div class="footer-sub">GitHub Pages • Tableau embeds • Scroll narrative layout</div>
+      </div>
+      <div class="footer-sub">Team: Vanshika • Aleena • Smera • Tim</div>
+    </div>
+  </footer>
 </body>
 </html>
