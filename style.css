@@ -328,7 +328,7 @@ h2{
   margin-top: 12px;
   border: 1px solid rgba(234,236,240,0.9);
   border-radius: 14px;
-  overflow: hidden;
+  overflow: visible;
   background: #fff;
 }
 
@@ -637,7 +637,7 @@ h2{
   margin-top: 12px;
   border: 1px solid rgba(234,236,240,0.9);
   border-radius: 14px;
-  overflow: hidden;
+  overflow: visible;
   background: #fff;
 }
 
@@ -724,7 +724,7 @@ section{
   margin-top: 10px;
   border: 1px solid #f0f0f0;
   border-radius: 12px;
-  overflow:hidden;
+  overflow:visible;
 }
 
 .caption{
