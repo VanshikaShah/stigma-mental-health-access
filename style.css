@@ -300,6 +300,43 @@ h2{
   gap: 16px;
 }
 
+.tryme{
+  margin-top: 10px;
+  border: 1px solid rgba(139,92,246,0.25);
+  background: rgba(255,255,255,0.7);
+  border-radius: 14px;
+  padding: 10px 12px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.tryme summary{
+  cursor: pointer;
+  font-weight: 800;
+  color: var(--text);
+  list-style: none;
+}
+
+.tryme summary::-webkit-details-marker{ display:none; }
+
+.tryme summary::before{
+  content: "▶";
+  display: inline-block;
+  margin-right: 8px;
+  color: var(--stigma);
+  transform: translateY(-1px);
+}
+
+.tryme[open] summary::before{ content: "▼"; }
+
+.tryme ul{
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.tryme li{ margin: 6px 0; }
+
 .card{
   background: rgba(255,255,255,0.92);
   border: 1px solid var(--border);
