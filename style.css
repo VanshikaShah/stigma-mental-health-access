@@ -661,6 +661,17 @@ h2{
 .hero-list li{ margin: 7px 0; }
 
 /* Cards + layout */
+.lead.full{
+  max-width: none;
+}
+
+.grid-2.equal{
+  align-items: stretch;
+}
+.grid-2.equal .card{
+  height: 100%;
+}
+
 .grid-2{
   display: grid;
   grid-template-columns: 1fr;
