@@ -665,21 +665,21 @@ h2{
   max-width: none;
 }
 
-.grid-2.equal{
-  align-items: stretch;
-}
-.grid-2.equal .card.small{
-  height: 100%;
-}
-
 .grid-2{
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
 }
+
 @media (min-width: 900px){
-  .grid-2{ grid-template-columns: 1fr 1fr; }
+  .grid-2{
+    grid-template-columns: 1fr 1fr; /* side-by-side on desktop */
+  }
 }
+
+/* make both cards same height */
+.grid-2.equal{ align-items: stretch; }
+.grid-2.equal .card{ height: 100%; }
 
 .card{
   background: rgba(255,255,255,0.92);
