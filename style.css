@@ -668,7 +668,7 @@ h2{
 .grid-2.equal{
   align-items: stretch;
 }
-.grid-2.equal .card{
+.grid-2.equal .card.small{
   height: 100%;
 }
 
